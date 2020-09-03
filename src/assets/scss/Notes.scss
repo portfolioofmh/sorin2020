@@ -1,0 +1,178 @@
+@import "variables.scss";
+@import "utilities.scss";
+
+
+#notes-header {
+    @extend %header-bar-with-create-btn;
+  }
+
+#notes {
+	padding: 2em 0;
+    overflow-x: auto;
+ 
+    width: 100%;
+}
+
+#notes-header h2 {
+    margin-bottom: .5em;
+    display: inline-block;
+    vertical-align: middle;
+}
+#notes{
+
+    .note{
+        padding: 1em;
+        background-color: $lightGrey;
+        margin-bottom: 1em;
+        border-radius: 6px;
+
+        .noteContent{
+            
+        }
+
+        .noteType{
+            text-transform: uppercase;
+        }
+
+        .noteBody{
+            position: relative;
+             .noteGrad{
+                background-image: url(../images/gray-grad.png);
+
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 400px;
+                background-position: bottom;
+                
+                
+            }
+        }
+
+       
+
+        .noteInfo{
+            text-align: right;
+            display: block;
+            font-size: .75em;
+            margin-top: 1em;
+
+
+        }
+       
+       
+        &:hover{
+            background-color: $lightBlue;
+            cursor: pointer;
+
+            .noteBody{
+
+                 .noteGrad{
+                    background-image: url(../images/gray-grad-blue.png);
+    
+              
+                }
+            }
+        }
+    }
+
+    .line-layout{
+        .note{
+            display: flex;
+            justify-content: space-between;
+
+            
+    
+            .noteContent{
+                width: 60%;
+                .noteTitle{
+                    margin: 0;
+                }
+                .noteBody{
+                    display: none;
+                }
+            }
+        }
+
+    }
+
+}
+
+
+#layoutToggle{
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    span{
+        text-indent: -1000px;
+        overflow: hidden;
+        height: 40px;
+        width: 40px;
+        display: inline-block;
+        border: 1px solid $primaryBlue;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    #tile{
+        background-image: url(../images/toggle-tile.svg);
+    }
+
+    #line{
+        background-image: url(../images/toggle-list.svg);
+    }
+
+    &.tile{
+        #tile{
+            background-image: url(../images/toggle-tile-active.svg);
+            background-color: $primaryBlue;
+        }
+    }
+
+    &.line{
+        #line{
+            background-image: url(../images/toggle-list-active.svg);
+            background-color: $primaryBlue;
+        }
+    }
+}
+
+.notes-container{
+
+    margin-top: 2em;
+    min-height: 300px;
+}
+
+.create-note-container{
+    padding: 1em 2em;
+}
+
+.my-masonry-grid {
+    display: -webkit-box; /* Not needed if autoprefixing */
+    display: -ms-flexbox; /* Not needed if autoprefixing */
+    display: flex;
+    margin-left: -30px; /* gutter size offset */
+    width: auto;
+
+    .note{
+        margin-bottom: 30px !important;
+        .noteContent{
+            
+            .noteBody{
+                max-height: 400px;
+                overflow: hidden;
+            }
+        }
+       
+    }
+  }
+  .my-masonry-grid_column {
+    padding-left: 30px; /* gutter size */
+    background-clip: padding-box;
+  }
+   
+  /* Style your items */
+  .my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+    background: grey;
+    margin-bottom: 30px;
+  }

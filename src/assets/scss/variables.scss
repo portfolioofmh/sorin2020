@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Marr Sans Web';
+    src: url('../fonts/MarrSans-Regular-Web.woff') format('woff2'),
+    url('../fonts/MarrSans-Regular-Web.woff2') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'Marr Sans Bold';
+    src: url('../fonts/MarrSans-Bold-Web.woff') format('woff2'),
+    url('../fonts/MarrSans-Bold-Web.woff2') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'Marr Sans Semi Bold';
+    src: url('../fonts/MarrSans-Semibold-Web.woff') format('woff2'),
+    url('../fonts/MarrSans-Semibold-Web.woff2') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+}
+    
+@font-face {
+    font-family: 'Noe Display';
+    src: url('../fonts/Noe-Display-Bold.woff') format('woff'),
+    url('../fonts/Noe-Display-Bold.eot') format('eot');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+$primaryBlue: #004D8E;
+$primaryGreen: #5CBF8E;
+$primaryGreenOver: #5cbf8ebf;
+$lightBlue: #f1f5f7;
+$darkGrey : #444;
+/* spaces bg: */
+
+
+$stedsBlue: ​#002566;
+$hikeAndBike: #fee04b;
+
+$lightGrey: #f4f4f4;
+$mediumGrey : #ccc;
+$redDoors: #ee5245;
+
+
+// Site Settings
+$headerHeight: 100px;
+$fullContentWidth: 80%;
+$boxShadowColor: $mediumGrey;
+$topMargin: 16.5px 0;
+$border-radius: 4px;
+$iconSize: 75px;
+$tl: 0.6s; // transition length
+$ftl: $tl/3; // fast transition
+
+$base-width: 1140px;
+$tablet-width: 968px;
+$mobile-portrait-width: 300px;
+$mobile-landscape-width: 420px;
+
+$num-columns: 12;
+$margin: 10px;
+
+$topMaxWidth: 1139px;
+$topMinWidth: 768px;
+$medMaxWidth: $topMinWidth - 1;
+$botMaxWidth: $medMaxWidth;
+$botMinWidth: 480px;

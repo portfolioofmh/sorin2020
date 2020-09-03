@@ -1,0 +1,37 @@
+
+@import "variables.scss";
+@import "utilities.scss";
+
+// permalink view
+
+.resource-group{
+    .resource{
+      padding: 2em;
+      margin-bottom: 2em;
+      border-bottom: 1px solid $lightGrey;
+      background-color: $lightBlue;
+      display: grid;
+      grid-template-columns: auto 150px;
+      grid-gap: 1rem;
+      .resource-info{
+          div{
+            margin-bottom: 1em;
+          }
+      }
+      .resource-link{
+  
+      }
+  
+      @media  (max-width: 600px) {
+        grid-template-columns: none;
+      }
+     
+    }
+  }
+
+  #perma-link {
+    .ck-toolbar{
+      display: none;
+    }
+  }
+  
